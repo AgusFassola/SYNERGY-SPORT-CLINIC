@@ -1,0 +1,24 @@
+@import "../parciales/reset";
+@import "../parciales/header";
+@import "../parciales/main";
+@import "../parciales/footer";
+@import "../parciales/variables";
+@import "../parciales/gimnasio";
+@import "../parciales/kinesiologia";
+@import "../parciales/nutricion";
+@import "../parciales/turnos";
+@import "../parciales/contactos";
+.contenedor {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.2fr 3fr .1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header header header"
+      "main main main"
+      "footer footer footer"; 
+      background-color: $oscuro;
+      color: $blanco;
+  }
+  
+  

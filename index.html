@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Synergy es una clinica deportiva en donde puedes mejorar fisicamente" >
+    <meta name="keywords" content="SYNERGY,CLINICA,DEPORTIVA,REHABILITACIÓN,CAPACITADO,SEGUIMIENTO,PROFESIONALES,AYUDARTE,LESIONES,OBJETIVOS">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/principal.css">
+    <title>SYNERGY | Clinica Deportiva</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <div class="header__section">
+                <img class="header__logo" src="./assets/logo2.jpg" alt="logo synergy" />
+                <div class="header__titulo">
+                    <h1 class="header__h1">SYNERGY SPORT CLINIC</h1>
+                    <h2 class="header__h2">Clinica deportiva</h2>
+                </div>
+            </div>
+            <!-- APLICO LA NAVBAR DE BS Y LA MODIFICO SEGUN LO QUE QUIERO CON LOS ESTILOS PROPIOS -->
+            <nav class="nav navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav nav__menu">
+                            <li class="nav-item nav__item">
+                                <a href="#">INICIO</a>
+                            </li>
+                            <li class="nav-item nav__item">
+                                <a href="#">SERVICIOS</a>
+                                <ul class="nav__subMenu">
+                                    <li>
+                                        <a class="nav__subMenu__link" href="./servicios/gimnasio.html">GIMNASIO</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__subMenu__link"
+                                            href="./servicios/kinesiologia.html">KINESIOLOGIA</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__subMenu__link" href="./servicios/nutricion.html">NUTRICION</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav__item">
+                                <a href="./turnero/turnos.html">TURNOS</a>
+                            </li>
+                            <li class="nav-item nav__item">
+                                <a href="./servicios/contactos.html">CONTACTOS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="main__1 container-fluid">
+                <div class="row">
+                    <h3 class="main__titulo">INICIO</h3>
+                    <div id="carouselExampleControls" class="imagenes carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/cintas.png" class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/afuera.png" class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/gym2.png" class="d-block w-100" alt="..." />
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="main__texto1 col-lg-12">
+                        <p>Somos <strong>Synergy</strong> , un centro deportivo capacitado para sacar tu 100%
+                            fisicamente.</p>
+                        <p>Te podemos armar un <strong>plan completo </strong> de acuerdo a lo que buscas!</p>
+                        <p>
+                            Tambien contamos con nuestro
+                            <strong>Centro de Rehabilitación</strong>
+                        <p> para que puedas volver de
+                            tus <strong>lesiones</strong>
+                        <p>en el <strong>menor tiempo</strong> posible!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__2 container">
+                <div class="row">
+                    <h2 class="main__titulo">STAFF</h2>
+                    <div class="main__texto2 col-lg-12">
+                        <p>CONTAMOS CON UN PERSONAL MUY CAPACITADO EN SUS RESPECTIVAS AREAS</p>
+                        <p>Brindamos un seguimiento completo con nuestros profesionales que siempre estan predispuestos a ayudarte.</p>
+                        <p>tanto con Licenciadas en Nutricion que pueden para armarte un <strong>Plan Alimentario</strong> acorde a tus necesidades!</p>
+                        <p>Licenciados en kinesiologia que seran los encargados de tu recuperacion de las lesiones!</p>
+                        <p>y tambien los mejores profesores de Ed. Fisica y preparadosres fisicos  para alcanzar tus objetivos!</p>            
+                    </div>
+                    <div class="empleados col-lg-12 d-flex justify-content-center" >
+                        <img class="empleados__img" src="./assets/empleados.jpeg"  alt="">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <section class="footer__section">
+              <h3 class="footer__titulo">CONTACTOS</h3>
+              <div class="footer__redes">
+                <a href=""><img class="footer__img" src="./assets/facebook.png" alt="facebook" /></a>
+                <a href=""><img class="footer__img" src="./assets/instagram.jpg" alt="instagram" /></a>
+                <a href=""><img class="footer__img" src="./assets/whatsapp.jpg" alt="whatsapp" /></a>
+                <a href=""><img class="footer__img" src="./assets/telegram.jpg" alt="telegram" /></a>
+                <a href=""><img class="footer__img" src="./assets/youtube.png" alt="youtube" /></a>
+                <a href=""><img class="footer__img" src="./assets/twitter.png" alt="youtube" /></a>
+              </div>
+            </section>
+            <img class="footer__maps" src="./assets/maps.jpeg" alt="" />
+          </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

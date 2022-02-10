@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+@import "../parciales/variables";
+
+.main{
+
+    font-size: 1.6rem;
+}
+.turnos{
+display: flex;
+
+}
+.turnos__label{
+    margin: 30px;
+}
+
+fieldset label{
+    font-family: raleway;
+    margin: 30px;
+}
+.escribir{
+    transition: all .5s;
+}
+.escribir:focus{
+    font-size: 1.3rem;
+}
+.elijaServicio{
+    display: flex;
+    flex-direction: column;
+}
+
+.terminos{
+    margin:30px;
+    display: flex;
+    flex-direction:row;
+}
+.botones{
+    margin: 30px;
+    margin-top: 20px;
+}
+.botones input{
+    width: 90px;
+    height: 40px;
+    background-color: $celeste;
+    font-family: 'Cairo', sans-serif;
+}
+.botones input:hover{
+    width: 95px;
+    height: 42px;
+    color: #412075d2;
+    background-color: $azul;
+}
+.segundo{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.turnos2{
+    width: 50%;
+}
+.turnos3{
+    width: 20%;
+    &__img{
+        width: 100PX;
+        position: relative;
+    }
+}

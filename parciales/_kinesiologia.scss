@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+@import "../parciales/variables";
+.kine1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+    &__video{
+        width: 100%;
+    }
+}
+.kine2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    &__img{
+        padding: 5px;
+        width: 100%;
+    }
+    &__img:hover{
+        width:90% ;
+    }
+}

@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+@import "../parciales/variables";
+@import "../parciales/media-queries";
+.header { grid-area: header; 
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    z-index: 9999;
+    background: linear-gradient(to left,  $celeste, $blanco);
+    align-items: flex-start;
+
+    &__section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+      
+      &__h1 {
+        font-family: 'Cairo', sans-serif;
+        color: $azul;
+        font-size: 4rem;
+        @include tablet{
+            font-size: 3rem;
+        }
+        @include mobil{
+            font-size: 2rem;
+        }
+      }
+      
+      &__h2 {
+        color: $gris;
+        font-family: raleway;
+        font-size: 3rem;
+        @include tablet{
+            font-size: 2rem;
+        }
+        @include mobil{
+            font-size: 1.5rem;
+        }
+      }
+      &__logo {
+        width: 180px;
+        @include tablet{
+            width: 120px;
+        }
+        @include mobil{
+            width: 100px;
+        }
+      }
+     
+}
+.nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    &__menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        border: solid $oscuro;
+        background-color: $turquesa;
+        @include tablet{
+            background-color: #19455e;
+        }
+      }
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+            padding: 8px 90px 8px 40px;
+            font-size: 1.8rem;
+            text-decoration: none;
+            display: block;
+            color: darkgray;
+            transition: background-color .6s;
+            font-family: 'Cairo', sans-serif;
+          }
+          a:hover {
+            width: 100%;
+            color: darkgray;
+            background-color: $oscuro;
+          }
+      }
+      
+      &__subMenu {
+        display: none;
+        background-color: $turquesa;
+        padding-left: 0px;
+        position: absolute;
+        margin-top: 6px;
+        @include tablet{
+            background-color: #19455e;
+        }
+        li {
+            display: block;
+            border: solid $oscuro;
+            border-top: 5px solid $oscuro;
+          }
+      }
+      
+      &__subMenu__link {
+        display: block;
+        text-decoration: none;
+        padding: 5px;
+        transition: background-color .5s;
+      }
+      
+      &__item:hover &__subMenu {
+        display: block;
+      }
+      
+  }
+  
+
+  

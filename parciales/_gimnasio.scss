@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+@import "../parciales/variables";
+.gym1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80%;
+    padding: 10px;
+    &__img{
+        width:100%;
+    }
+}
+.gym2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: space-evenly;
+    height: 100%;
+    &__img1{
+        width:30%;
+        padding: 20px;
+    }
+    &__img1:hover{
+        width: 25%;
+    }
+
+    &__img2{
+        width:30%;
+        padding: 20px;
+    }
+    &__img2:hover{
+        width: 25%;
+    }
+}
+.gymProfe{
+    display: flex;
+    flex-direction:row;
+    width:60%;
+    &__img{
+        width: 10%;
+        padding: 20px;
+    }
+    &__img:hover{
+        width: 20%;
+    }
+}
+.gymProfe:hover{
+    width: 50%;
+}

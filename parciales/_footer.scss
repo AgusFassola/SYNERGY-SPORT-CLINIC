@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+@import "../parciales/variables";
+.footer { grid-area: footer; 
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to left,  $celeste, $blanco);
+    &__section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-basis: 65%;
+        justify-content: space-around;
+    }
+    &__titulo {
+        color: $azul;
+        font-family: raleway;
+        font-size: 3rem;
+        @include tablet{
+            font-size: 2rem;
+        }
+        @include mobil{
+            font-size: 1.5rem;
+        }
+      }
+    &__img {
+        max-width: 50%;
+        padding: 10%;
+      }
+    &__redes {
+        justify-content: space-around;
+        display: flex;
+        align-items: flex-start;
+      }
+    &__maps {
+        display: flex;
+        justify-content: center;
+        flex-basis: 10%;
+        padding: 10px;
+        width: 120px;
+        height: 140px;
+      }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="podes reservar tu turno para las diferentes areas de la clínica">
+    <meta name="keywords" content="SYNERGY,CLINICA,DEPORTIVA,TURNOS,DATOS,PERSONALES,PROFESIONALES,CONTACTOS">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/principal.css">
+    <title>TURNOS | Synergy</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <div class="header__section">
+                <img class="header__logo" src="../assets/logo2.jpg" alt="logo synergy" />
+                <div class="header__titulo">
+                    <h1 class="header__h1">SYNERGY SPORT CLINIC</h1>
+                    <h2 class="header__h2">Clinica deportiva</h2>
+                </div>
+            </div>
+            <!-- APLICO LA NAVBAR DE BS Y LA MODIFICO SEGUN LO QUE QUIERO CON LOS ESTILOS PROPIOS -->
+            <nav class="nav navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav nav__menu">
+                            <li class="nav-item nav__item">
+                                <a href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item nav__item">
+                                <a href="#">SERVICIOS</a>
+                                <ul class="nav__subMenu">
+                                    <li>
+                                        <a class="nav__subMenu__link" href="../servicios/gimnasio.html">GIMNASIO</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__subMenu__link"
+                                            href="../servicios/kinesiologia.html">KINESIOLOGIA</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__subMenu__link" href="../servicios/nutricion.html">NUTRICION</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav__item">
+                                <a href="#">TURNOS</a>
+                            </li>
+                            <li class="nav-item nav__item">
+                                <a href="../servicios/contactos.html">CONTACTOS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="container-fluid">
+                <h2 class="main__titulo">TURNOS</h2>
+                <div class="turnos row">
+                    <form>
+                        <legend>Datos personales:</legend>
+                        <div class="mb-3">
+                            <label for="disabledSelect" class="form-label">Sexo:</label>
+                            <select id="disabledSelect" class="form-select">
+                                <option value="" disabled selected>Seleccione sexo</option>
+                                <option value="masculino">Hombre</option>
+                                <option value="femenino">Mujer</option>
+                                <option value="no-definido">No definido</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Escriba su nombre">
+                            <div id="emailHelp" class="form-text"></div>
+                        </div>
+                        <div class="mb-1">
+                            <label for="exampleInputEmail1" class="form-label">Apellido:</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Escriba su apellido">
+                            <div id="emailHelp" class="form-text" </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">DNI:</label>
+                                <input type="number" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Ingrese su DNI:">
+                                <div id="emailHelp" class="form-text">Sin puntos</div>
+                            </div>
+
+                            <div class="radioButom">
+                                <label class="elijaServicio" for="servicio">Elija un servicio:</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Gimnasio
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Kinesiología
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Nutrición
+                                    </label>
+                                </div>
+                            </div>
+
+                    </form>
+                </div>
+                <div class="row segundo">
+                        <div class="turnos2">
+                            <form>
+                                <div class="terminos">
+                                    <label for="extra">Alguna condición a tener en cuenta:</label>
+                                </div>
+                                <div class="terminos">
+                                    <textarea name="comentario" id="extra" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Acepto terminos y
+                                        condiciones</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">RESERVAR</button>
+                                <button type="reset" class="btn btn-primary">BORRAR</button>
+                            </form>
+                        </div>
+                        <div class="turnos3">
+                            <img class="turnos3__img" src="../assets/logo1.jpg" alt="">
+                        </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <section class="footer__section">
+                <h3 class="footer__titulo">CONTACTOS</h3>
+                <div class="footer__redes">
+                    <a href=""><img class="footer__img" src="../assets/facebook.png" alt="facebook" /></a>
+                    <a href=""><img class="footer__img" src="../assets/instagram.jpg" alt="instagram" /></a>
+                    <a href=""><img class="footer__img" src="../assets/whatsapp.jpg" alt="whatsapp" /></a>
+                    <a href=""><img class="footer__img" src="../assets/telegram.jpg" alt="telegram" /></a>
+                    <a href=""><img class="footer__img" src="../assets/youtube.png" alt="youtube" /></a>
+                    <a href=""><img class="footer__img" src="../assets/twitter.png" alt="youtube" /></a>
+                </div>
+            </section>
+            <img class="footer__maps" src="../assets/maps.jpeg" alt="" />
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
