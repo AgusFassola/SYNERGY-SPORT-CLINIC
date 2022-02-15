@@ -3,14 +3,17 @@
 @import "../parciales/variables";
 .footer { grid-area: footer; 
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     background: linear-gradient(to left,  $celeste, $blanco);
+
     &__section{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
         flex-basis: 65%;
         justify-content: space-around;
+        align-content: center;
     }
     &__titulo {
         color: $azul;
@@ -22,10 +25,15 @@
         @include mobil{
             font-size: 1.5rem;
         }
-      }
+    }
     &__img {
+<<<<<<< HEAD
         max-width: 40px;
         padding: 10%;
+=======
+        max-width: 70px;
+        padding: 15px;
+>>>>>>> nuevaRama
       }
     &__redes {
         justify-content: space-around;
@@ -35,9 +43,16 @@
     &__maps {
         display: flex;
         justify-content: center;
-        flex-basis: 10%;
         padding: 10px;
+<<<<<<< HEAD
         width: 100%;
         height: 100%;
+=======
+        width: 50%;
+        &__img{
+          width: 90%;
+          height: 100%;
+        }
+>>>>>>> nuevaRama
       }
 }
