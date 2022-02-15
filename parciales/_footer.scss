@@ -3,14 +3,17 @@
 @import "../parciales/variables";
 .footer { grid-area: footer; 
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     background: linear-gradient(to left,  $celeste, $blanco);
+
     &__section{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
         flex-basis: 65%;
         justify-content: space-around;
+        align-content: center;
     }
     &__titulo {
         color: $azul;
@@ -22,10 +25,10 @@
         @include mobil{
             font-size: 1.5rem;
         }
-      }
+    }
     &__img {
-        max-width: 50%;
-        padding: 10%;
+        max-width: 70px;
+        padding: 15px;
       }
     &__redes {
         justify-content: space-around;
@@ -35,9 +38,11 @@
     &__maps {
         display: flex;
         justify-content: center;
-        flex-basis: 10%;
         padding: 10px;
-        width: 120px;
-        height: 140px;
+        width: 50%;
+        &__img{
+          width: 90%;
+          height: 100%;
+        }
       }
 }
