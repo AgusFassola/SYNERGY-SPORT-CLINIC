@@ -1,7 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
 @import "../parciales/variables";
+.grande{
+    display: flex;
+    flex-direction: row;
+}
+.contactos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 40%;
+    &__redes{
 
-.contactos__img{
-    width: 200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &__img{
+            width: 10px;
+        }
+    }
+    &__contenedor{
+        width: 50px;
+        &__img{
+            width: 50px;
+        }
+    }
 }
