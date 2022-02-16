@@ -424,6 +424,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px;
+  height: 100%;
   width: 50%;
 }
 
@@ -714,12 +715,21 @@ fieldset label {
 }
 
 .contactos__img {
-  width: 25%;
+  width: 160px;
   padding: 50px;
 }
 
+.contactos2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+}
+
 .contactos2__img {
-  width: 90%;
+  width: 80%;
   padding: 10px;
 }
 
