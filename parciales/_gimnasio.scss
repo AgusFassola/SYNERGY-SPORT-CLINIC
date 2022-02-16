@@ -5,46 +5,87 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     padding: 10px;
     &__img{
         width:100%;
+        height: 100%;
     }
 }
 .gym2{
     display: flex;
     flex-wrap: wrap;
     flex-direction:row;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100%;
-    &__img1{
-        width:30%;
-        padding: 20px;
+
+    &__cont1{
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        &__img1{
+            width:90%;
+            padding: 30px;
+        }
+        &__img1:hover{
+           width: 91%;
+        }
+    
     }
-    &__img1:hover{
-        width: 25%;
+    &__cont2{
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        &__img2{
+            width:90%;
+            padding: 30px;
+        }
+        &__img2:hover{
+            width: 91%;
+    
+        }
     }
 
-    &__img2{
-        width:30%;
-        padding: 20px;
-    }
-    &__img2:hover{
-        width: 25%;
-    }
+
 }
-.gymProfe{
+.gym3{
     display: flex;
-    flex-direction:row;
-    width:60%;
-    &__img{
-        width: 10%;
-        padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+
+    &__h2{
+        color: $blanco;
+        font-family: raleway;
+        font-size: 2.8rem;
+        width: 35%;
     }
-    &__img:hover{
-        width: 20%;
+    &__video{
+        width: 50%;
+        height: 100%;
     }
 }
-.gymProfe:hover{
-    width: 50%;
+.row{
+    padding-bottom: 20px;
+}
+.profeDani{
+    padding: 20px;
+    width:28%;
+    display: flex;
+    flex-direction: column;
+    background-color: $oscuro;
+
+    &__img{
+        width: 100%;
+        padding: 20px;
+    }
+    &__text{
+        flex-direction:column;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+    }
 }
