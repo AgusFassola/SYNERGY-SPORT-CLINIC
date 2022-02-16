@@ -519,6 +519,22 @@
   height: 100%;
 }
 
+.subtitulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+.subtitulo h2 {
+  color: #c0f7f1;
+  font-family: raleway;
+  font-size: 3rem;
+}
+
 .gym2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -533,10 +549,11 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+  padding-bottom: 20px;
 }
 
-.gym2__cont1 {
-  width: 45%;
+.gym2__cont {
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,35 +562,17 @@
           justify-content: center;
 }
 
-.gym2__cont1__img1 {
+.gym2__cont__img {
   width: 90%;
   padding: 30px;
 }
 
-.gym2__cont1__img1:hover {
-  width: 91%;
-}
-
-.gym2__cont2 {
-  width: 45%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.gym2__cont2__img2 {
-  width: 90%;
-  padding: 30px;
-}
-
-.gym2__cont2__img2:hover {
+.gym2__cont__img:hover {
   width: 91%;
 }
 
 .gym3 {
+  padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -603,12 +602,12 @@
 }
 
 .row {
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
-.profeDani {
-  padding: 20px;
-  width: 28%;
+.cuadro {
+  margin: 20px;
+  width: 23%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -617,14 +616,37 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #01121C;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.profeDani__img {
+.cuadro__David__img {
   width: 100%;
   padding: 20px;
 }
 
-.profeDani__text {
+.cuadro__David__text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+}
+
+.cuadro__Agus__img {
+  width: 100%;
+  padding: 20px;
+  height: 54%;
+}
+
+.cuadro__Agus__text {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
