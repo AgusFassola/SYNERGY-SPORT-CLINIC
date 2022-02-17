@@ -390,6 +390,10 @@
           justify-content: center;
 }
 
+.synergy {
+  width: 300vh;
+}
+
 /*---------------imagen 2-----------*/
 .empleados {
   -webkit-box-pack: center;
@@ -402,10 +406,22 @@
 }
 
 .empleados__img {
-  width: 50%;
+  width: 70%;
   padding: 10px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .empleados__img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .empleados__img {
+    width: 90%;
+  }
 }
 
 .footer {

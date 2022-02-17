@@ -58,6 +58,9 @@
 .row{
     justify-content: center;
 }
+.synergy{
+    width: 300vh;
+}
   /*---------------imagen 2-----------*/
 .empleados {
     justify-content: center;
@@ -66,9 +69,16 @@
   }
   
   .empleados__img {
-    width: 50%;
+    width: 70%;
     padding: 10px;
     object-fit: cover;
+    @include tablet{
+        width: 90%;
+
+    }
+    @include mobil{
+        width: 90%;
+    }
   }
   
   
