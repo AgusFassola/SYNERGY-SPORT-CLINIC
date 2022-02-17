@@ -26,16 +26,11 @@
     
 }
   /*---------------imagen 1-----------*/
-  .w-100{
-      height: 90vh;
-      object-fit: cover;
-  }
-.imagenes{
-    align-items: center;
-    width: 100%;
-    height: 50%;
-    padding: 30px;
+.w-100{
+    height: 90vh;
+    object-fit: cover;
 }
+
 .indicador{
     margin-bottom: 30px;
 }
@@ -76,7 +71,4 @@
     object-fit: cover;
   }
   
-  .empleados__img:hover {
-    width: 49%;
-  }
   

@@ -4,6 +4,7 @@
 .grande{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .contactos{
     display: flex;
@@ -15,6 +16,12 @@
     &__img{
         width: 160px;
         padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    a{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 .contactos2{
@@ -24,5 +31,7 @@
     &__img{
         width: 80%;
         padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
     }
 }

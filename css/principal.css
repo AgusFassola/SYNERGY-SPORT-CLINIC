@@ -55,10 +55,10 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: space-evenly;
@@ -183,7 +183,7 @@
 
 @media screen and (max-width: 992px) {
   .nav {
-    width: 10%;
+    width: 100%;
   }
 }
 
@@ -315,15 +315,6 @@
      object-fit: cover;
 }
 
-.imagenes {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 50%;
-  padding: 30px;
-}
-
 .indicador {
   margin-bottom: 30px;
 }
@@ -415,10 +406,6 @@
   padding: 10px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.empleados__img:hover {
-  width: 49%;
 }
 
 .footer {
@@ -1063,6 +1050,8 @@ fieldset label {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contactos {
@@ -1086,6 +1075,19 @@ fieldset label {
 .contactos__img {
   width: 160px;
   padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contactos a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contactos2 {
@@ -1100,6 +1102,11 @@ fieldset label {
 .contactos2__img {
   width: 80%;
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contenedor {
