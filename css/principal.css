@@ -822,21 +822,73 @@
   height: 100%;
 }
 
-.nutri1 {
+.nutri {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 90%;
-  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
 }
 
-.nutri1__video {
-  width: 100%;
+.nutri__cont {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nutri__cont__img {
+  width: 90%;
+  padding: 30px;
+}
+
+.nutri__cont__img:hover {
+  width: 91%;
+}
+
+.nutri3 {
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 500px;
+}
+
+.nutri3__h2 {
+  color: #c0f7f1;
+  font-family: raleway;
+  font-size: 2.8rem;
+  width: 35%;
+}
+
+.nutri3__video {
+  width: 70%;
+  height: 100%;
+  margin: 20px;
 }
 
 .nutri2 {
@@ -845,24 +897,52 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  background-color: #233e4e;
 }
 
-.nutri2__img {
-  padding: 5px;
+.cuadro {
+  margin: 20px;
+  width: 23%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #01121C;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: solid #485c63;
+}
+
+.cuadro__Nutri__img {
   width: 100%;
+  padding: 20px;
 }
 
-.nutri2__img:hover {
-  width: 95%;
+.cuadro__Nutri__text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
 }
 
 .main {
