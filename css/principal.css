@@ -193,12 +193,10 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 100%;
-  border: solid #01121C;
-  background-color: #4747d4;
 }
 
 @media screen and (max-width: 992px) {
@@ -225,7 +223,7 @@
   font-size: 1.8rem;
   text-decoration: none;
   display: block;
-  color: darkgray;
+  color: #485c63;
   -webkit-transition: background-color .5s;
   transition: background-color .5s;
   font-family: 'Cairo', sans-serif;
@@ -233,13 +231,13 @@
 
 .nav__item a:hover {
   width: 100%;
-  color: darkgray;
-  background-color: #01121C;
+  color: #01121C;
 }
 
 .nav__subMenu {
   display: none;
-  background-color: #4747d4;
+  background: -webkit-gradient(linear, right top, left top, from(#00aee0), to(#c0f7f1));
+  background: linear-gradient(to left, #00aee0, #c0f7f1);
   padding-left: 0px;
   position: absolute;
   margin-top: 61px;
@@ -254,7 +252,6 @@
 .nav__subMenu li {
   display: block;
   border: solid #01121C;
-  border-top: 5px solid #01121C;
 }
 
 .nav__subMenu__link {
@@ -748,6 +745,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  border: solid #485c63;
 }
 
 .cuadro__Sergio__img {

@@ -90,10 +90,8 @@
     &__menu {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: flex-end;
         width: 100%;
-        border: solid $oscuro;
-        background-color: $turquesa;
         @include tablet{
             background-color: #19455e;
         }
@@ -109,20 +107,19 @@
             font-size: 1.8rem;
             text-decoration: none;
             display: block;
-            color: darkgray;
+            color: $gris;
             transition: background-color .5s;
             font-family: 'Cairo', sans-serif;
           }
           a:hover {
             width: 100%;
-            color: darkgray;
-            background-color: $oscuro;
+            color: $oscuro;
           }
       }
       
       &__subMenu {
         display: none;
-        background-color: $turquesa;
+        background: linear-gradient(to left,  $celeste, $blanco);
         padding-left: 0px;
         position: absolute;
         margin-top: 61px;
@@ -132,7 +129,6 @@
         li {
             display: block;
             border: solid $oscuro;
-            border-top: 5px solid $oscuro;
           }
       }
       
