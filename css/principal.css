@@ -949,10 +949,31 @@
   font-size: 1.6rem;
 }
 
+.primero {
+  width: 100%;
+}
+
 .turnos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.forma {
+  width: 50%;
+}
+
+.turnos3 {
+  width: 45%;
+}
+
+.turnos3__img {
+  width: 100%;
 }
 
 .turnos__label {
@@ -1026,15 +1047,6 @@ fieldset label {
 
 .turnos2 {
   width: 50%;
-}
-
-.turnos3 {
-  width: 20%;
-}
-
-.turnos3__img {
-  width: 100PX;
-  position: relative;
 }
 
 .grande {
