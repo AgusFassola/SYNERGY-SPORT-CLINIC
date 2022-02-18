@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
 @import "../parciales/variables";
 
-.main{
+.turnos{
     font-size: 2rem;
     background-image: url(../assets/remerasynergy.jpg);
     background-repeat: no-repeat;
@@ -21,7 +21,12 @@
         background-size: 288%;
     }
     &__titulo{
-        padding: 50px;
+        font-size: 3rem;
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        justify-content: center;
+        color:$blanco ;
+        padding-top: 20px;
         color: white;
         @include tablet{
             font-size: 3rem;
@@ -33,14 +38,15 @@
             padding: 5px;
         }
     }
+    &__row{
+        padding-bottom: 250px;
+    
+        @include tablet{
+            padding: 0;
+       }
+    }
 }
-.row{
-    padding-bottom: 250px;
 
-    @include tablet{
-        padding: 0;
-   }
-}
 .forma{
     width: 40%;
     @include tablet{

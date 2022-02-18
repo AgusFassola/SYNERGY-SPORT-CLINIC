@@ -29,12 +29,15 @@
 .w-100{
     height: 90vh;
     object-fit: cover;
+    @include mobil{
+        width: 10vh;
+    }
 }
 
 .indicador{
     margin-bottom: 30px;
 }
-/*---------------texto 1-----------*/
+
 @for $i from 1 to 3{
     .main__texto#{$i}{
         font-size: 1.7rem;
@@ -44,7 +47,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 10px;
         @include tablet{
             font-size: 1.5rem;
 
@@ -54,14 +56,25 @@
         }
     }
 }
-
+.desaparece{
+    &__1{
+        @include tablet{
+            display: none;
+        }
+    }
+    &__2{
+        @include mobil{
+            display: none;
+        }
+    }
+        
+}
 .row{
     justify-content: center;
 }
 .synergy{
     width: 300vh;
 }
-  /*---------------imagen 2-----------*/
 .empleados {
     justify-content: center;
     display: flex;

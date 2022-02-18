@@ -62,76 +62,79 @@
             </nav>
         </header>
         <main class="main">
-            <h2 class="main__titulo">TURNOS</h2>
-            <div class="container-fluid">
-                <div class="row">
-                    <form class="forma">
-                        <legend class="forma__datos">Datos personales:</legend>
-                        
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Nombre:</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                placeholder="Escriba su nombre">
-                            <div id="emailHelp" class="form-text"></div>
-                        </div>
-                        <div class="mb-1">
-                            <label for="exampleInputEmail1" class="form-label">Apellido:</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                placeholder="Escriba su apellido">
-                            <div id="emailHelp" class="form-text" </div>
-                            </div>
+            <div class="turnos">
+                <h2 class="turnos__titulo">TURNOS</h2>
+                <div class="container-fluid">
+                    <div class="row turnos__row">
+                        <form class="forma">
+                            <legend class="forma__datos">Datos personales:</legend>
+                            
                             <div class="mb-3">
-                                <label for="disabledSelect" class="form-label">Sexo:</label>
-                                <select id="disabledSelect" class="form-select">
-                                    <option value="" disabled selected>Seleccione sexo</option>
-                                    <option value="masculino">Hombre</option>
-                                    <option value="femenino">Mujer</option>
-                                    <option value="no-definido">No definido</option>
-                                </select>
+                                <label for="exampleInputEmail1" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                    placeholder="Escriba su nombre">
+                                <div id="emailHelp" class="form-text"></div>
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">DNI:</label>
-                                <input type="number" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Ingrese su DNI:">
-                            </div>
-
-                            <div class="radioButom">
-                                <label class="forma__datos" for="servicio">Elija un servicio:</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                        Gimnasio
-                                    </label>
+                            <div class="mb-1">
+                                <label for="exampleInputEmail1" class="form-label">Apellido:</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                    placeholder="Escriba su apellido">
+                                <div id="emailHelp" class="form-text" </div>
                                 </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2" checked>
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                        Kinesiología
-                                    </label>
+                                <div class="mb-3">
+                                    <label for="disabledSelect" class="form-label">Sexo:</label>
+                                    <select id="disabledSelect" class="form-select">
+                                        <option value="" disabled selected>Seleccione sexo</option>
+                                        <option value="masculino">Hombre</option>
+                                        <option value="femenino">Mujer</option>
+                                        <option value="no-definido">No definido</option>
+                                    </select>
                                 </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2" checked>
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                        Nutrición
-                                    </label>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">DNI:</label>
+                                    <input type="number" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Ingrese su DNI:">
                                 </div>
-                            </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="terminos form-check-label" for="exampleCheck1">Acepto terminos y
-                                    condiciones</label>
-                            </div>
-                            <div class="botones">
-                                <button type="submit" class="btn btn-primary">RESERVAR</button>
-                                <button type="reset" class="btn btn-primary">BORRAR</button>
     
-                            </div>
-                    </form>
+                                <div class="radioButom">
+                                    <label class="forma__datos" for="servicio">Elija un servicio:</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Gimnasio
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Kinesiología
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Nutrición
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="terminos form-check-label" for="exampleCheck1">Acepto terminos y
+                                        condiciones</label>
+                                </div>
+                                <div class="botones">
+                                    <button type="submit" class="btn btn-primary">RESERVAR</button>
+                                    <button type="reset" class="btn btn-primary">BORRAR</button>
+        
+                                </div>
+                        </form>
+                    </div>
                 </div>
             </div>
+            
         </main>
         <footer class="footer">
             <section class="footer__section">

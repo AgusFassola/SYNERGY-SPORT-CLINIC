@@ -315,11 +315,16 @@
      object-fit: cover;
 }
 
+@media screen and (max-width: 576px) {
+  .w-100 {
+    width: 10vh;
+  }
+}
+
 .indicador {
   margin-bottom: 30px;
 }
 
-/*---------------texto 1-----------*/
 .main__texto1 {
   font-size: 1.7rem;
   font-family: 'Raleway', sans-serif;
@@ -337,7 +342,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -369,7 +373,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -384,6 +387,18 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .desaparece__1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .desaparece__2 {
+    display: none;
+  }
+}
+
 .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -394,7 +409,6 @@
   width: 300vh;
 }
 
-/*---------------imagen 2-----------*/
 .empleados {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -954,7 +968,7 @@
   font-size: 1rem;
 }
 
-.main {
+.turnos {
   font-size: 2rem;
   background-image: url(../assets/remerasynergy.jpg);
   background-repeat: no-repeat;
@@ -964,14 +978,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  .main {
+  .turnos {
     background-position: 54%;
     background-size: 147%;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .main {
+  .turnos {
     color: #233e4e;
     bottom: 0;
     font-size: 1.5rem;
@@ -980,13 +994,22 @@
   }
 }
 
-.main__titulo {
-  padding: 50px;
+.turnos__titulo {
+  font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #c0f7f1;
+  padding-top: 20px;
   color: white;
 }
 
 @media screen and (max-width: 768px) {
-  .main__titulo {
+  .turnos__titulo {
     font-size: 3rem;
     padding: 20px;
     margin: 0;
@@ -994,18 +1017,18 @@
 }
 
 @media screen and (max-width: 576px) {
-  .main__titulo {
+  .turnos__titulo {
     font-size: 2rem;
     padding: 5px;
   }
 }
 
-.row {
+.turnos__row {
   padding-bottom: 250px;
 }
 
 @media screen and (max-width: 768px) {
-  .row {
+  .turnos__row {
     padding: 0;
   }
 }
