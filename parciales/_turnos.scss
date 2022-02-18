@@ -9,19 +9,54 @@
     background-position: 50%;
     background-size:85%;
     color: $marino;
+    @include tablet{
+        background-position: 54%;
+        background-size: 147%;
+    }
+    @include mobil{
+        color: $marino;
+        bottom: 0;
+        font-size: 1.5rem;
+        background-position: 54%;
+        background-size: 288%;
+    }
     &__titulo{
         padding: 50px;
         color: white;
+        @include tablet{
+            font-size: 3rem;
+            padding: 20px;
+            margin: 0;
+        }
+        @include mobil{
+            font-size: 2rem;
+            padding: 5px;
+        }
     }
 }
 .row{
-
     padding-bottom: 250px;
+
+    @include tablet{
+        padding: 0;
+   }
 }
 .forma{
     width: 40%;
+    @include tablet{
+        width: 60%;
+    }
+    @include mobil{
+        width: 100%;
+    }
     &__datos{
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        @include tablet{
+    
+        }
+        @include mobil{
+            font-size: 2rem;
+        }
     }
 }
 .radioButom{
@@ -29,4 +64,33 @@
     flex-direction: column;
     flex-wrap: wrap;
     padding: 30px;
+    @include tablet{
+    padding: 10px;
+    padding-bottom: 20px;
+    }
+    @include mobil{
+        padding: 5px;
+        padding-bottom: 10px;
+
+    }
+}
+.terminos{
+    @include tablet{
+    font-size: 1.7rem;
+    padding-bottom: 20px;
+    }
+    @include mobil{
+        font-size: 1.3rem;
+        padding-bottom: 5px;
+
+    }
+}
+.botones{
+    @include tablet{
+        
+        padding-bottom: 150px;
+    }
+    @include mobil{
+        padding-bottom: 110px;
+    }
 }
