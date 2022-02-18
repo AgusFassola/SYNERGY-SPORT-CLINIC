@@ -955,55 +955,32 @@
 }
 
 .main {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  background-image: url(../assets/remerasynergy.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 85%;
+  color: #233e4e;
 }
 
-.primero {
-  width: 100%;
+.main__titulo {
+  padding: 50px;
+  color: white;
 }
 
-.turnos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.row {
+  padding-bottom: 250px;
 }
 
 .forma {
-  width: 50%;
+  width: 40%;
 }
 
-.turnos3 {
-  width: 45%;
+.forma__datos {
+  font-size: 2.5rem;
 }
 
-.turnos3__img {
-  width: 100%;
-}
-
-.turnos__label {
-  margin: 30px;
-}
-
-fieldset label {
-  font-family: raleway;
-  margin: 30px;
-}
-
-.escribir {
-  -webkit-transition: all .5s;
-  transition: all .5s;
-}
-
-.escribir:focus {
-  font-size: 1.3rem;
-}
-
-.elijaServicio {
+.radioButom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1011,51 +988,9 @@ fieldset label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.terminos {
-  margin: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.botones {
-  margin: 30px;
-  margin-top: 20px;
-}
-
-.botones input {
-  width: 90px;
-  height: 40px;
-  background-color: #00aee0;
-  font-family: 'Cairo', sans-serif;
-}
-
-.botones input:hover {
-  width: 95px;
-  height: 42px;
-  color: #412075d2;
-  background-color: #0e475a;
-}
-
-.segundo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 50%;
-}
-
-.turnos2 {
-  width: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px;
 }
 
 .grande {

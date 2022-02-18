@@ -3,73 +3,30 @@
 @import "../parciales/variables";
 
 .main{
-
-    font-size: 1.6rem;
-}
-.primero{
-    width: 100%;
-
-}
-.turnos{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-}
-.forma{
-    width: 50%;
-}
-.turnos3{
-    width: 45%;
-    &__img{
-        width: 100%;
+    font-size: 2rem;
+    background-image: url(../assets/remerasynergy.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size:85%;
+    color: $marino;
+    &__titulo{
+        padding: 50px;
+        color: white;
     }
 }
+.row{
 
-.turnos__label{
-    margin: 30px;
+    padding-bottom: 250px;
 }
-
-fieldset label{
-    font-family: raleway;
-    margin: 30px;
+.forma{
+    width: 40%;
+    &__datos{
+        font-size: 2.5rem;
+    }
 }
-.escribir{
-    transition: all .5s;
-}
-.escribir:focus{
-    font-size: 1.3rem;
-}
-.elijaServicio{
+.radioButom{
     display: flex;
     flex-direction: column;
-}
-
-.terminos{
-    margin:30px;
-    display: flex;
-    flex-direction:row;
-}
-.botones{
-    margin: 30px;
-    margin-top: 20px;
-}
-.botones input{
-    width: 90px;
-    height: 40px;
-    background-color: $celeste;
-    font-family: 'Cairo', sans-serif;
-}
-.botones input:hover{
-    width: 95px;
-    height: 42px;
-    color: #412075d2;
-    background-color: $azul;
-}
-.segundo{
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-}
-.turnos2{
-    width: 50%;
+    flex-wrap: wrap;
+    padding: 30px;
 }
