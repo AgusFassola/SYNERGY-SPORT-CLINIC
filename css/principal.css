@@ -134,7 +134,7 @@
 
 @media screen and (max-width: 576px) {
   .header__h1 {
-    font-size: 2.4rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -168,7 +168,7 @@
 
 @media screen and (max-width: 576px) {
   .header__logo {
-    width: 100px;
+    width: 70px;
   }
 }
 
@@ -201,7 +201,9 @@
 
 @media screen and (max-width: 768px) {
   .nav__menu {
-    background-color: #19455e;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -230,7 +232,6 @@
 }
 
 .nav__item a:hover {
-  width: 100%;
   color: #01121C;
 }
 
@@ -241,12 +242,6 @@
   padding-left: 0px;
   position: absolute;
   margin-top: 61px;
-}
-
-@media screen and (max-width: 768px) {
-  .nav__subMenu {
-    background-color: #19455e;
-  }
 }
 
 .nav__subMenu li {
