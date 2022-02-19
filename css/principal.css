@@ -231,6 +231,12 @@
   font-family: 'Cairo', sans-serif;
 }
 
+@media screen and (max-width: 576px) {
+  .nav__item a {
+    font-size: 1.3rem;
+  }
+}
+
 .nav__item a:hover {
   color: #01121C;
 }
@@ -341,7 +347,7 @@
 
 @media screen and (max-width: 768px) {
   .main__texto1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -372,7 +378,7 @@
 
 @media screen and (max-width: 768px) {
   .main__texto2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -451,6 +457,15 @@
   background: linear-gradient(to left, #00aee0, #c0f7f1);
 }
 
+@media screen and (max-width: 576px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .footer__section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,7 +498,7 @@
 
 @media screen and (max-width: 576px) {
   .footer__titulo {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -510,9 +525,21 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px;
+  padding: 20px;
   height: 100%;
   width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__maps {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer__maps {
+    width: 100%;
+  }
 }
 
 .footer__maps__img {

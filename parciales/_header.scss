@@ -110,6 +110,9 @@
             color: $gris;
             transition: background-color .5s;
             font-family: 'Cairo', sans-serif;
+            @include mobil{
+              font-size: 1.3rem;
+            }
           }
           a:hover {
             color: $oscuro;
