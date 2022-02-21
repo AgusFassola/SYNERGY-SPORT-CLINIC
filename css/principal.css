@@ -639,6 +639,28 @@
   padding: 25px;
 }
 
+.gym2__cont__chau {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .gym2__cont__chau {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .gym2__cont__chau {
+    display: none;
+  }
+}
+
 .gym__carousel {
   height: 70vh;
 }
@@ -1530,8 +1552,6 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 0.2fr 3fr .1fr;
-      grid-template-rows: 0.2fr 3fr .1fr;
   gap: 0px 0px;
       grid-template-areas: "header header header" "main main main" "footer footer footer";
   background-color: #01121C;
