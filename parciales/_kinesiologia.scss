@@ -6,11 +6,21 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    @include mobil{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
     &__cuello{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 45%;
+    @include mobil{
+        width: 100%;
+        padding-bottom: 20px;
+
+    }
     &__img{
         width: 90%;
     }
@@ -20,6 +30,11 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 45%;
+    @include mobil{
+        width: 100%;
+        padding: 10px;
+
+    }
     &__img{
         width: 90%;
     }
@@ -42,15 +57,20 @@
 .kine{
     background-color: $marino;
 }
-.cuadro{
+.cuadro__kine{
     margin: 20px;
-    width:23%;
+    width:30%;
     display: flex;
     flex-direction: column;
     background-color: $oscuro;
     justify-content: space-evenly;
     border: solid $gris;
-
+    @include tablet{
+        width: 37%;
+    }
+    @include mobil{
+        width: 90%;
+    }
     &__Sergio{
         &__img{
         width: 100%;
@@ -80,21 +100,51 @@
     
 }
 .kine3{
-    padding:  50px;
+    padding:  30px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     width: 100%;
     height: 500px;
-    &__h2{
+    align-items: center;
+    @include tablet{
+        padding: 20px;
+        height: 380px;
+    }
+    @include mobil{
+        padding: 0;
+        align-content: center;
+    }
+    &__text{
         color: $blanco;
         font-family: raleway;
         font-size: 2.8rem;
-        width: 35%;
+        width: 38%;
+        @include tablet{
+            font-size: 2rem;
+        }
+        @include mobil{
+            width: 100%;
+            font-size: 1.6rem;
+        }
     }
     &__video{
         width: 50%;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include tablet{
+            width: 60%;
+        }
+        @include mobil{
+            width: 100%;
+            height: 80%;
+            padding: 10px;
+        }
+        &__iframe{
+            width: 100%;
+        }
     }
 }
