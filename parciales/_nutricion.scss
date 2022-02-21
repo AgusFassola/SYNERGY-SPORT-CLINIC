@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
 @import "../parciales/variables";
+.grande__nutri{
+    padding: 0;
+}
 .nutri{
     display: flex;
     flex-wrap: wrap;
@@ -9,56 +12,57 @@
     height: 100%;
     padding-bottom: 20px;
     &__cont{
-        width: 45%;
+        width: 35%;
+        height: 80vh;
         display: flex;
         justify-content: center;
+        @include tablet{
+            width: 50%;
+            height: 70vh;
+        }
+        @include mobil{
+            width: 100%;
+            height: 55vh;
+        }
         &__img{
-            width:90%;
+            width:100%;
             padding: 30px;
         }
-        &__img:hover{
-           width: 91%;
+        &__fuera{
+            width: 35%;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            @include tablet{
+                width: 50%;
+                height: 70vh;
+            }
+            @include mobil{
+                display: none;
+            }
         }
     }
 }
-.nutri3{
-    padding-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 500px;
-    &__h2{
-        color: $blanco;
-        font-family: raleway;
-        font-size: 2.8rem;
-        width: 35%;
-    }
-    &__video{
-        width: 70%;
-        height: 100%;
-        margin:20px;
-    }
-}
+
 .nutri2{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+
     background-color: $marino;
 }
-.cuadro{
+.cuadro__Nutri{
     margin: 20px;
-    width:23%;
+    width:30%;
     display: flex;
     flex-direction: column;
     background-color: $oscuro;
     justify-content: space-evenly;
     border: solid $gris;
+    @include tablet{
+        width: 36%;
+    }
+    @include mobil{
+        width: 100%;
+    }
 
-    &__Nutri{
         &__img{
         width: 100%;
         padding: 20px;
@@ -68,6 +72,43 @@
             display: flex;
             align-items: center;
             font-size: 1rem;
+        }  
+}
+.nutri3{
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 500px;
+    @include tablet{
+        flex-direction: column;
+        align-items: center;
+    }
+    @include mobil{
+        flex-wrap: nowrap;
+    }
+    &__h2{
+        color: $blanco;
+        font-family: raleway;
+        font-size: 2.8rem;
+        width: 35%;
+        @include tablet{
+        font-size: 2.6rem;
+        width: 100%;
         }
-    }  
+        @include mobil{
+            font-size: 1.6rem;
+        }
+    }
+    &__video{
+        width: 50%;
+        margin:20px;
+        @include tablet{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
 }

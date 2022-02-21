@@ -120,7 +120,7 @@
     border: solid $gris;
 
     @include tablet{
-        width: 36%;
+        width: 40%;
     }
     @include mobil{
         width: 85%;
@@ -131,6 +131,8 @@
         &__img{
         width: 100%;
         padding: 20px;
+        height: 54%;
+
         }
         &__text{
             flex-direction:column;

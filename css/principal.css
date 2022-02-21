@@ -752,7 +752,7 @@
 
 @media screen and (max-width: 768px) {
   .cuadro__gym {
-    width: 36%;
+    width: 40%;
   }
 }
 
@@ -765,6 +765,7 @@
 .cuadro__gym__David__img {
   width: 100%;
   padding: 20px;
+  height: 54%;
 }
 
 .cuadro__gym__David__text {
@@ -1045,6 +1046,10 @@
   width: 100%;
 }
 
+.grande__nutri {
+  padding: 0;
+}
+
 .nutri {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1063,7 +1068,8 @@
 }
 
 .nutri__cont {
-  width: 45%;
+  width: 35%;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1072,13 +1078,99 @@
           justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+  .nutri__cont {
+    width: 50%;
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nutri__cont {
+    width: 100%;
+    height: 55vh;
+  }
+}
+
 .nutri__cont__img {
-  width: 90%;
+  width: 100%;
   padding: 30px;
 }
 
-.nutri__cont__img:hover {
-  width: 91%;
+.nutri__cont__fuera {
+  width: 35%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nutri__cont__fuera {
+    width: 50%;
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nutri__cont__fuera {
+    display: none;
+  }
+}
+
+.nutri2 {
+  background-color: #233e4e;
+}
+
+.cuadro__Nutri {
+  margin: 20px;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #01121C;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: solid #485c63;
+}
+
+@media screen and (max-width: 768px) {
+  .cuadro__Nutri {
+    width: 36%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cuadro__Nutri {
+    width: 100%;
+  }
+}
+
+.cuadro__Nutri__img {
+  width: 100%;
+  padding: 20px;
+}
+
+.cuadro__Nutri__text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
 }
 
 .nutri3 {
@@ -1101,6 +1193,25 @@
   height: 500px;
 }
 
+@media screen and (max-width: 768px) {
+  .nutri3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nutri3 {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .nutri3__h2 {
   color: #c0f7f1;
   font-family: raleway;
@@ -1108,64 +1219,34 @@
   width: 35%;
 }
 
+@media screen and (max-width: 768px) {
+  .nutri3__h2 {
+    font-size: 2.6rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nutri3__h2 {
+    font-size: 1.6rem;
+  }
+}
+
 .nutri3__video {
-  width: 70%;
-  height: 100%;
+  width: 50%;
   margin: 20px;
 }
 
-.nutri2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  background-color: #233e4e;
-}
-
-.cuadro {
-  margin: 20px;
-  width: 23%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #01121C;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  border: solid #485c63;
-}
-
-.cuadro__Nutri__img {
-  width: 100%;
-  padding: 20px;
-}
-
-.cuadro__Nutri__text {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1rem;
+@media screen and (max-width: 768px) {
+  .nutri3__video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
 }
 
 .turnos {
