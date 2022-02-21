@@ -811,6 +811,16 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  padding-bottom: 70px;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .kine1 {
+    padding-bottom: 60px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -823,6 +833,8 @@
         -ms-flex-align: center;
             align-items: center;
     margin: 0;
+    padding-bottom: 40px;
+    padding-top: 20px;
   }
 }
 
@@ -846,7 +858,7 @@
 }
 
 .kine1__cuello__img {
-  width: 90%;
+  width: 100%;
 }
 
 .kine1__pierna {
@@ -869,33 +881,7 @@
 }
 
 .kine1__pierna__img {
-  width: 90%;
-}
-
-.kine2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.kine2__img {
-  padding: 5px;
   width: 100%;
-}
-
-.kine2__img:hover {
-  width: 90%;
 }
 
 .kine {
