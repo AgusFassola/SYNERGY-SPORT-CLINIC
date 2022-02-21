@@ -1275,15 +1275,15 @@
   font-size: 2rem;
   background-image: url(../assets/remerasynergy.jpg);
   background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 85%;
+  background-size: 100%;
+  background-position-y: center;
   color: #233e4e;
 }
 
 @media screen and (max-width: 768px) {
   .turnos {
     background-position: 54%;
-    background-size: 147%;
+    background-size: 166%;
   }
 }
 
@@ -1292,13 +1292,13 @@
     color: #233e4e;
     bottom: 0;
     font-size: 1.5rem;
-    background-position: 54%;
-    background-size: 288%;
+    background-position: 50%;
+    background-size: 314%;
   }
 }
 
 .turnos__titulo {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: 'Raleway', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1307,7 +1307,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   color: #c0f7f1;
-  padding-top: 20px;
+  padding-top: 65px;
   color: white;
 }
 
@@ -1321,7 +1321,7 @@
 
 @media screen and (max-width: 576px) {
   .turnos__titulo {
-    font-size: 2rem;
+    font-size: 2.4rem;
     padding: 5px;
   }
 }
@@ -1353,12 +1353,14 @@
 }
 
 .forma__datos {
-  font-size: 2.8rem;
+  font-size: 3rem;
+  padding-bottom: 35px;
 }
 
 @media screen and (max-width: 576px) {
   .forma__datos {
     font-size: 2rem;
+    padding-bottom: 10px;
   }
 }
 
@@ -1373,6 +1375,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 30px;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1389,6 +1392,10 @@
   }
 }
 
+.form-check {
+  margin-bottom: 0.8rem;
+}
+
 @media screen and (max-width: 768px) {
   .terminos {
     font-size: 1.7rem;
@@ -1403,15 +1410,20 @@
   }
 }
 
+.botones {
+  padding-top: 35px;
+}
+
 @media screen and (max-width: 768px) {
   .botones {
+    padding-top: 5px;
     padding-bottom: 150px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .botones {
-    padding-bottom: 110px;
+    padding-bottom: 115px;
   }
 }
 
