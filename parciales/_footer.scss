@@ -17,20 +17,33 @@
         justify-content: space-around;
         align-content: center;
     }
+    a{
+      text-decoration: none;
+    }
+    
     &__titulo {
-        color: $azul;
-        font-family: raleway;
-        font-size: 3.2rem;
+      color: $azul;
+      font-family: raleway;
+        font-size: 3rem;
+
         @include tablet{
             font-size: 2rem;
         }
         @include mobil{
             font-size: 2rem;
+            padding-top: 20px;
         }
+    }
+    &__titulo:hover {
+      color: $oscuro;
     }
     &__img {
         max-width: 70px;
         padding: 15px;
+        @include mobil{
+          max-width: 60px;
+
+        }
       }
     &__redes {
         justify-content: space-around;
