@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway&display=swap");
@@ -298,6 +299,7 @@
 }
 
 .main__1 {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,12 +309,16 @@
           flex-direction: column;
 }
 
+.main__1 .row {
+  padding: 0px;
+}
+
 .main__2 {
   background-color: #233e4e;
   max-width: 100%;
 }
 
-/*---------------imagen 1-----------*/
+/*---------------imágenes del carousel-----------*/
 .w-100 {
   height: 90vh;
   -o-object-fit: cover;
@@ -325,10 +331,7 @@
   }
 }
 
-.indicador {
-  margin-bottom: 30px;
-}
-
+/*---------------textos-----------*/
 .main__texto1 {
   font-size: 1.7rem;
   font-family: 'Raleway', sans-serif;
@@ -409,10 +412,12 @@
           justify-content: center;
 }
 
+/*---------------imágen 1-----------*/
 .synergy {
   width: 300vh;
 }
 
+/*---------------imágen de empleados-----------*/
 .empleados {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -421,6 +426,12 @@
   display: -ms-flexbox;
   display: flex;
   padding: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .empleados {
+    padding: 0;
+  }
 }
 
 .empleados__img {
@@ -438,7 +449,8 @@
 
 @media screen and (max-width: 576px) {
   .empleados__img {
-    width: 90%;
+    width: 100%;
+    padding: 0;
   }
 }
 
