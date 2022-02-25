@@ -23,7 +23,6 @@
 }
 
 .header {
-  grid-area: header;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -178,6 +177,7 @@
   }
 }
 
+/*------------MENU DE NAVEGACIÓN---------------*/
 .nav {
   width: 100%;
   display: -webkit-box;
@@ -473,6 +473,8 @@
       justify-content: space-around;
   background: -webkit-gradient(linear, right top, left top, from(#00aee0), to(#c0f7f1));
   background: linear-gradient(to left, #00aee0, #c0f7f1);
+  /*------------REDES SOCIALES--------------*/
+  /*------------MAPA--------------*/
 }
 
 @media screen and (max-width: 576px) {
@@ -580,25 +582,16 @@
   height: 100%;
 }
 
-.gym1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
+.main__contenedor {
+  padding: 0;
 }
 
-.gym1__img {
-  width: 100%;
-  height: 100%;
+/*----------------carousel--------------------*/
+.gym__carousel {
+  height: 70vh;
 }
 
+/*----------------imágenes sueltas--------------------*/
 .subtitulo {
   padding-top: 10px;
   display: -webkit-box;
@@ -694,10 +687,77 @@
   }
 }
 
-.gym__carousel {
-  height: 70vh;
+/*----------------cuadro de profes--------------------*/
+.cuadro__gym {
+  width: 23%;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #01121C;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: solid #485c63;
 }
 
+@media screen and (max-width: 768px) {
+  .cuadro__gym {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cuadro__gym {
+    width: 85%;
+  }
+}
+
+.cuadro__gym__David__img {
+  width: 100%;
+  padding: 20px;
+  height: 54%;
+}
+
+.cuadro__gym__David__text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+}
+
+.cuadro__gym__Agus__img {
+  width: 100%;
+  padding: 20px;
+  height: 54%;
+}
+
+.cuadro__gym__Agus__text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+}
+
+/*----------------video--------------------*/
 .gym3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -788,84 +848,15 @@
   padding: 20px;
 }
 
-.cuadro__gym {
-  width: 23%;
-  margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #01121C;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  border: solid #485c63;
-}
-
-@media screen and (max-width: 768px) {
-  .cuadro__gym {
-    width: 40%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .cuadro__gym {
-    width: 85%;
-  }
-}
-
-.cuadro__gym__David__img {
-  width: 100%;
-  padding: 20px;
-  height: 54%;
-}
-
-.cuadro__gym__David__text {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1rem;
-}
-
-.cuadro__gym__Agus__img {
-  width: 100%;
-  padding: 20px;
-  height: 54%;
-}
-
-.cuadro__gym__Agus__text {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1rem;
-}
-
+/*---------------imágenes de kinesiología---------------------*/
 .kine1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   padding-bottom: 70px;
   padding-top: 30px;
@@ -903,7 +894,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 45%;
+  width: 40%;
 }
 
 @media screen and (max-width: 576px) {
@@ -926,7 +917,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 45%;
+  width: 40%;
 }
 
 @media screen and (max-width: 576px) {
@@ -940,6 +931,7 @@
   width: 100%;
 }
 
+/*---------------cuadros de profesionales---------------------*/
 .kine {
   background-color: #233e4e;
 }
@@ -1012,6 +1004,7 @@
   font-size: 1rem;
 }
 
+/*---------------video kinesiología---------------------*/
 .kine3 {
   padding: 30px;
   display: -webkit-box;
@@ -1105,6 +1098,7 @@
   padding: 0;
 }
 
+/*------------------IMÁGENES SUELTAS---------------------*/
 .nutri {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1176,6 +1170,7 @@
   }
 }
 
+/*----------------CUADRO DE PROFESIONALES------------------------------*/
 .nutri2 {
   background-color: #233e4e;
 }
@@ -1228,6 +1223,7 @@
   font-size: 1rem;
 }
 
+/*---------------VIDEO DE NUTRICION---------------------------*/
 .nutri3 {
   padding-bottom: 20px;
   display: -webkit-box;

@@ -2,70 +2,74 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
 @import "../parciales/variables";
 .footer { grid-area: footer; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: linear-gradient(to left,  $celeste, $blanco);
+
+  @include mobil{
+    flex-direction: column;
+  }
+  &__section{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    flex-basis: 65%;
     justify-content: space-around;
-    background: linear-gradient(to left,  $celeste, $blanco);
-    @include mobil{
-      flex-direction: column;
-    }
-    &__section{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        flex-basis: 65%;
-        justify-content: space-around;
-        align-content: center;
-    }
-    a{
-      text-decoration: none;
-    }
+    align-content: center;
+  }
+  a{
+    text-decoration: none;
+  }
     
-    &__titulo {
-      color: $azul;
-      font-family: raleway;
-        font-size: 3rem;
+  &__titulo {
+    color: $azul;
+    font-family: raleway;
+    font-size: 3rem;
 
-        @include tablet{
-            font-size: 2rem;
-        }
-        @include mobil{
-            font-size: 2rem;
-            padding-top: 20px;
-        }
+    @include tablet{
+      font-size: 2rem;
     }
-    &__titulo:hover {
-      color: $oscuro;
+    @include mobil{
+      font-size: 2rem;
+      padding-top: 20px;
     }
-    &__img {
-        max-width: 70px;
-        padding: 15px;
-        @include mobil{
-          max-width: 60px;
+  }
+  &__titulo:hover {
+    color: $oscuro;
+  }
+  /*------------REDES SOCIALES--------------*/
+  &__img {
+    max-width: 70px;
+    padding: 15px;
 
-        }
-      }
-    &__redes {
-        justify-content: space-around;
-        display: flex;
-        align-items: flex-start;
+    @include mobil{
+      max-width: 60px;
 
-      }
-    &__maps {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-        height: 100%;
-        width: 50%;
-        @include tablet{
-          width: 80%;
-        }
-        @include mobil{
-          width: 100%;
-        }
-        &__img{
-          width: 90%;
-          height: 100%;
-        }
-      }
+    }
+  }
+  &__redes {
+    justify-content: space-around;
+    display: flex;
+    align-items: flex-start;
+  }
+  /*------------MAPA--------------*/
+  &__maps {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+    width: 50%;
+
+    @include tablet{
+      width: 80%;
+    }
+    @include mobil{
+      width: 100%;
+    }
+    &__img{
+      width: 90%;
+      height: 100%;
+    }
+  }
 }
