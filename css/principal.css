@@ -331,7 +331,7 @@
 
 @media screen and (max-width: 576px) {
   .w-100 {
-    width: 10vh;
+    width: 10%;
   }
 }
 
@@ -414,11 +414,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-/*---------------imágen 1-----------*/
-.synergy {
-  width: 300vh;
 }
 
 /*---------------imágen de empleados-----------*/

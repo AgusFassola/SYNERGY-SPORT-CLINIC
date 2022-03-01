@@ -36,7 +36,7 @@
     object-fit: cover;
 
     @include mobil{
-        width: 10vh;
+        width: 10%;
     }
 }
   /*---------------textos-----------*/
@@ -75,16 +75,13 @@
 .row{
     justify-content: center;
 }
-/*---------------imágen 1-----------*/
-.synergy{
-    width: 300vh;
-}
+
   /*---------------imágen de empleados-----------*/
 .empleados {
     justify-content: center;
     display: flex;
     padding: 10px;
-    
+
     @include mobil{
         padding: 0;
     }
