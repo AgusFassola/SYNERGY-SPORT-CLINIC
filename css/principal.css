@@ -255,6 +255,7 @@
   padding-left: 0px;
   position: absolute;
   margin-top: 61px;
+  z-index: 999;
 }
 
 .nav__subMenu li {
