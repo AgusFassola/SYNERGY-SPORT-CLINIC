@@ -1098,6 +1098,20 @@
   padding: 0;
 }
 
+.nutri__texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 /*------------------IMÁGENES SUELTAS---------------------*/
 .nutri {
   display: -webkit-box;
@@ -1525,6 +1539,8 @@
 }
 
 .contactos a {
+  text-decoration: none;
+  color: #00aee0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

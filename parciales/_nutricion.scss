@@ -4,6 +4,12 @@
 .grande__nutri{
     padding: 0;
 }
+.nutri__texto{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    flex-direction: column;
+}
 /*------------------IMÁGENES SUELTAS---------------------*/
 .nutri{
     display: flex;
@@ -114,7 +120,7 @@
     &__video{
         width: 50%;
         margin:20px;
-        
+
         @include tablet{
             display: flex;
             justify-content: center;
