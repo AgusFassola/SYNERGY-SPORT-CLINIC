@@ -240,7 +240,8 @@
 
 @media screen and (max-width: 576px) {
   .nav__item a {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    padding: 5px 30px 5px 30px;
   }
 }
 
@@ -273,6 +274,12 @@
 
 .nav__item:hover .nav__subMenu {
   display: block;
+}
+
+@media screen and (max-width: 576px) {
+  .nav__item:hover .nav__subMenu {
+    top: 75px;
+  }
 }
 
 .main {
@@ -353,18 +360,23 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
   .main__texto1 {
     font-size: 1.4rem;
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .main__texto1 {
     font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -385,18 +397,23 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
   .main__texto2 {
     font-size: 1.4rem;
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .main__texto2 {
     font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -437,7 +454,8 @@
 
 .empleados__img {
   width: 70%;
-  padding: 10px;
+  padding-bottom: 35px;
+  padding-top: 25px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -445,13 +463,16 @@
 @media screen and (max-width: 768px) {
   .empleados__img {
     width: 90%;
+    padding-top: 0px;
+    padding-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .empleados__img {
-    width: 100%;
-    padding: 0;
+    width: 85%;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 }
 

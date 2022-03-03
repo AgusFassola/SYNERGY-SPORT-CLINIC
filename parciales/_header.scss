@@ -117,7 +117,8 @@
       font-family: 'Cairo', sans-serif;
 
       @include mobil{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        padding: 5px 30px 5px 30px;
       }
     }
     a:hover {
@@ -131,7 +132,7 @@
     position: absolute;
     margin-top: 61px;
     z-index:999;
-    
+
     li {
       display: block;
       border: solid $oscuro;
@@ -147,6 +148,10 @@
       
   &__item:hover &__subMenu {
     display: block;
+    
+    @include mobil{
+      top:75px;
+    }
   }    
 }
   
