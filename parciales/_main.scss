@@ -20,6 +20,14 @@
         display: flex;
         flex-direction: column;
 
+        &__img{
+            @include mobil{
+                height: 63vh;
+            }
+        }
+        .synergy{
+            object-fit: cover;
+        }
         .row{
             padding: 0px;
         }

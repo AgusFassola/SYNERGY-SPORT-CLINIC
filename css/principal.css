@@ -166,7 +166,7 @@
 
 @media screen and (max-width: 768px) {
   .header__logo {
-    width: 90px;
+    width: 100px;
   }
 }
 
@@ -318,6 +318,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (max-width: 576px) {
+  .main__1__img {
+    height: 63vh;
+  }
+}
+
+.main__1 .synergy {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main__1 .row {
@@ -677,7 +688,7 @@
 
 @media screen and (max-width: 576px) {
   .gym2__cont {
-    width: 100%;
+    width: 90%;
     padding: 0;
   }
 }
