@@ -37,7 +37,8 @@
     padding: 0;
 
     &__cont{
-        width: 25%;
+        height: 62vh;
+        width: 24%;
         display: flex;
         justify-content: center;
 
@@ -51,11 +52,12 @@
 
         &__img{
             width:100%;
-            padding: 25px;
+            padding:30px;
         }
 
         &__chau{
-            width: 25%;
+            width: 24%;
+            height: 62vh;
             display: flex;
             justify-content: center;
 
@@ -78,6 +80,7 @@
     background-color: $oscuro;
     justify-content: space-evenly;
     border: solid $gris;
+    align-items: center;
 
     @include tablet{
         width: 40%;
@@ -91,7 +94,10 @@
         &__img{
         width: 100%;
         padding: 20px;
-        height: 54%;
+        height: 50vh;
+        @include tablet{
+            height: 45vh;
+        }
         }
         &__text{
             flex-direction:column;
@@ -105,7 +111,10 @@
         &__img{
             width: 100%;
             padding: 20px;
-            height: 54%;
+            height: 50vh;
+            @include tablet{
+                height: 45vh;
+            }
         }
         &__text{
             flex-direction:column;

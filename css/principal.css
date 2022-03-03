@@ -659,7 +659,8 @@
 }
 
 .gym2__cont {
-  width: 25%;
+  height: 62vh;
+  width: 24%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,11 +684,12 @@
 
 .gym2__cont__img {
   width: 100%;
-  padding: 25px;
+  padding: 30px;
 }
 
 .gym2__cont__chau {
-  width: 25%;
+  width: 24%;
+  height: 62vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -724,6 +726,9 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   border: solid #485c63;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -741,7 +746,13 @@
 .cuadro__gym__David__img {
   width: 100%;
   padding: 20px;
-  height: 54%;
+  height: 50vh;
+}
+
+@media screen and (max-width: 768px) {
+  .cuadro__gym__David__img {
+    height: 45vh;
+  }
 }
 
 .cuadro__gym__David__text {
@@ -761,7 +772,13 @@
 .cuadro__gym__Agus__img {
   width: 100%;
   padding: 20px;
-  height: 54%;
+  height: 50vh;
+}
+
+@media screen and (max-width: 768px) {
+  .cuadro__gym__Agus__img {
+    height: 45vh;
+  }
 }
 
 .cuadro__gym__Agus__text {
@@ -872,10 +889,11 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 100%;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
   padding-top: 30px;
 }
 
@@ -916,7 +934,7 @@
 
 @media screen and (max-width: 576px) {
   .kine1__cuello {
-    width: 100%;
+    width: 85%;
     padding-bottom: 20px;
   }
 }
@@ -939,7 +957,7 @@
 
 @media screen and (max-width: 576px) {
   .kine1__pierna {
-    width: 100%;
+    width: 85%;
     padding: 10px;
   }
 }
@@ -967,6 +985,9 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: solid #485c63;
 }
 
@@ -983,8 +1004,15 @@
 }
 
 .cuadro__kine__Sergio__img {
-  width: 100%;
+  width: 90%;
   padding: 20px;
+  height: 60vh;
+}
+
+@media screen and (max-width: 768px) {
+  .cuadro__kine__Sergio__img {
+    height: 45vh;
+  }
 }
 
 .cuadro__kine__Sergio__text {
@@ -1002,9 +1030,15 @@
 }
 
 .cuadro__kine__Martin__img {
-  width: 100%;
+  width: 90%;
   padding: 20px;
-  height: 60%;
+  height: 60vh;
+}
+
+@media screen and (max-width: 768px) {
+  .cuadro__kine__Martin__img {
+    height: 45vh;
+  }
 }
 
 .cuadro__kine__Martin__text {
@@ -1019,6 +1053,10 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 1rem;
+}
+
+.cuadro__kine p {
+  font-size: 1.1rem;
 }
 
 /*---------------video kinesiología---------------------*/
@@ -1173,8 +1211,8 @@
 }
 
 .nutri__cont__img {
-  width: 100%;
-  padding: 30px;
+  width: 95%;
+  padding: 20px;
 }
 
 .nutri__cont__fuera {
@@ -1567,12 +1605,12 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 
 @media screen and (max-width: 768px) {
   .contactos a {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -1595,12 +1633,20 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 50%;
+  padding-bottom: 35px;
+  padding-top: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .contactos2 {
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .contactos2 {
-    width: 100%;
-    padding: 0;
+    padding-top: 25px;
+    width: 90%;
   }
 }
 
